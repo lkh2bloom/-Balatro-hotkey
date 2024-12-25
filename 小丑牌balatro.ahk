@@ -1,4 +1,4 @@
-﻿#Requires AutoHotkey v2.0
+#Requires AutoHotkey v2.0
 #NoTrayIcon
 if !DirExist("bin") {
     DirCreate "bin"
@@ -92,8 +92,8 @@ a:: {
     cl(534, 925)
     Sleep 150
     cl(968, 826)
+    longtext :=
 }
-longtext :=
     (
         "
         游戏中按F1可调出帮助菜单
