@@ -25,8 +25,6 @@ read source code to modify the speed of mouse to fix your PC processing speed.
 游戏中按F1可调出帮助菜单
 （所有快捷键都是游戏中才有用）
 
----
-
 **键盘快捷键:**
 
 初始界面按下 **A** 即可快速开始游戏 
