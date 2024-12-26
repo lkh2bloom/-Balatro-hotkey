@@ -15,7 +15,7 @@ SetWorkingDir A_ScriptDir
 ; FileInstall "小丑牌 (1).png",".\bin\"
 neww := Gui()
 neww.Opt("-DPIScale -MaximizeBox") neww.MarginX := 0 neww.MarginY := 0
-neww.Title := "小丑牌balatro"
+neww.Title := "小丑牌balatro.exe"
 try {
     mainpic := neww.AddPicture("w-1 h600 x0 y0", "bin/小丑牌 (1).png")
     ; mainpic := neww.AddPicture("w-1 h400 x0 y0", "HBITMAP:*" LoadPicture("小丑牌balatro.exe"))
@@ -39,7 +39,7 @@ cl(px, py) {
     Sleep 100
     MouseClick
 }
-#HotIf WinActive("小丑牌balatro")
+#HotIf WinActive("小丑牌balatro.exe")
 WheelUp:: mainpic.Value := "bin/小丑牌 (1).png"
 WheelDown:: mainpic.Value := "bin/小丑牌 (2).png"
 #HotIf
@@ -92,8 +92,9 @@ a:: {
     cl(534, 925)
     Sleep 150
     cl(968, 826)
-    longtext :=
 }
+
+longtext :=
     (
         "
         游戏中按F1可调出帮助菜单
@@ -117,7 +118,6 @@ a:: {
         "
     )
 ;帮助信息
-F1:: {
-    MsgBox longtext
-}
+F1:: MsgBox longtext
+
 #HotIf
